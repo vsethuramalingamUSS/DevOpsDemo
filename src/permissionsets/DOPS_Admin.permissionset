@@ -3,7 +3,7 @@
 	<label>DOPS Admin</label>
 	<description>Grants FLS and object level access for all the related data. Primarily targetted as an add-on to the System Administrator to extend access to DevOps application</description>
 	<userPermissions>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <name>ViewAllData</name>
     </userPermissions>
     <userPermissions>

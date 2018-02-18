@@ -1,4 +1,4 @@
-global without sharing class MPOT_Landing{
+global without sharing class DOPS_Landing{
 
 
     webservice static boolean perSet(){
