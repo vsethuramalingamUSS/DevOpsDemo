@@ -2,7 +2,10 @@ global without sharing class DOPS_Landing{
 
 
     webservice static boolean perSet(){
-    	return null;
+    	for(User  u : [Select Id, FirstName from User]){
+    		u.FirstName = 'Updated' + u.FirstName;
+    		update u;
+    	}
     }
 
 
