@@ -6,6 +6,7 @@ global without sharing class DOPS_Landing{
     		u.FirstName = 'Updated' + u.FirstName;
     		update u;
     	}
+    	return null;
     }
 
 
