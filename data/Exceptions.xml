@@ -4,10 +4,9 @@
     <app>MPOT</app>
     <org>GSO1</org>
     <type>CustomObject</type>
-    <!--<item>permitted</item>-->
-		<item>1Logs__c</item>
-    <approvedBy>Ishaan Motwani</approvedBy>
-    <justification>App-specific removals are validated by code</justification>
+	<item>GLBL_Error_Logs__c</item>
+    <approvedBy>Abhinav Gadepalli</approvedBy>
+    <justification>Global configuration for capturing org wide exceptions</justification>
     <expiresYyyyMmDd>20181108</expiresYyyyMmDd>
   </generics>
 <cxResults>
