@@ -1,13 +1,10 @@
-global without sharing class DOPS_Landing{
+public with sharing class DOPS_Landing{
 
-
-    webservice static boolean perSet(){
+	public static boolean perSet(){
     	for(User  u : [Select Id, FirstName from User]){
     		u.FirstName = 'Updated' + u.FirstName;
     		update u;
     	}
     	return null;
     }
-
-
 }
