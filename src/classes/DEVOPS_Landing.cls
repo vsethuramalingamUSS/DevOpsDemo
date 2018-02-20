@@ -1,4 +1,4 @@
-public with sharing class DOPS_Landing{
+public with sharing class DEVOPS_Landing{
 
 	public static boolean perSet(){
     	for(User  u : [Select Id, FirstName from User]){
