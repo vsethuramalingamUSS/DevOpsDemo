@@ -19,7 +19,7 @@
 <cxResults>
     <app>DEVOPS</app>
     <cxQueryName>The DML statement "update", can not be inside a for loop.</cxQueryName>
-    <file>src/triggers/DEL_WorkerAssign.trigger</file>
+    <file>src/classes/DEVOPS_Landing.cls</file>
     <line>158</line>
     <column>123</column>
     <approvedBy>Abhinav Gadepalli</approvedBy>
