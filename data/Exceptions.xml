@@ -16,14 +16,4 @@
     <justification>Only admins can edit fields that are in read-only mode</justification>
     <expiresYyyyMmDd>20181108</expiresYyyyMmDd>
   </generics>
-<cxResults>
-    <app>DEVOPS</app>
-    <cxQueryName>The DML statement "update", can not be inside a for loop.</cxQueryName>
-    <file>Codecheck/src/classes/DEVOPS_Landing.cls</file>
-    <line>4</line>
-    <column>123</column>
-    <approvedBy>Abhinav Gadepalli</approvedBy>
-    <justification>Cannot bulkify but will only be called for single record from webservices</justification>
-    <expiresYyyyMmDd>20180606</expiresYyyyMmDd>
-  </cxResults>
 </Package>
