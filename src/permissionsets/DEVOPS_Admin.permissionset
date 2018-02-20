@@ -8,6 +8,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
-        <name>AuthorApex</name>
+        <name>EditReadonlyFields</name>
     </userPermissions>
 </PermissionSet>
