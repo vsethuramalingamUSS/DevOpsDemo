@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-	<label>DOPS Admin</label>
+	<label>DEVOPS Admin</label>
 	<description>Grants FLS and object level access for all the related data. Primarily targetted as an add-on to the System Administrator to extend access to DevOps application</description>
 	<userPermissions>
         <enabled>false</enabled>
