@@ -8,6 +8,14 @@
     <justification>Global configuration for capturing org wide exceptions</justification>
     <expiresYyyyMmDd>20181108</expiresYyyyMmDd>
 </generics>
+<generics>
+    <app>DEVOPS</app>
+    <type>Permission</type>
+    <item>DEVOPS_Admin.permissionset___AuthorApex</item>
+    <approvedBy>Abhinav Gadepalli</approvedBy>
+    <justification>Only admins can run scripts on adhoc basis</justification>
+    <expiresYyyyMmDd>20181108</expiresYyyyMmDd>
+  </generics>
 <cxResults>
     <app>DEVOPS</app>
     <cxQueryName>The DML statement "update", can not be inside a for loop.</cxQueryName>
