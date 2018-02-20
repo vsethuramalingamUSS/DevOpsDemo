@@ -11,9 +11,9 @@
 <generics>
     <app>DEVOPS</app>
     <type>Permission</type>
-    <item>DEVOPS_Admin.permissionset___AuthorApex</item>
+    <item>DEVOPS_Admin.permissionset___EditReadonlyFields</item>
     <approvedBy>Abhinav Gadepalli</approvedBy>
-    <justification>Only admins can run scripts on adhoc basis</justification>
+    <justification>Only admins can edit fields that are in read-only mode</justification>
     <expiresYyyyMmDd>20181108</expiresYyyyMmDd>
   </generics>
 <cxResults>
