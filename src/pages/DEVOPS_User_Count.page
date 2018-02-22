@@ -1,0 +1,7 @@
+<apex:page controller="DEVOPS_Landing">
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageMessages></apex:pageMessages>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
