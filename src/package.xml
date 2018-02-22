@@ -14,7 +14,7 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>DEVOPS_User_Count/members>
+        <members>DEVOPS_User_Count</members>
         <name>ApexPage</name>
     </types>
     <version>38.0</version>
