@@ -55,7 +55,6 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Class_Name__c</fullName>
         <encrypted>false</encrypted>
@@ -99,7 +98,7 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>PEP Logs</label>
+    <label>DEVOPS Logs</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
