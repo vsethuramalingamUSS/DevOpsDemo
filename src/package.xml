@@ -6,6 +6,7 @@
     </types>
     <types>
         <members>DEVOPS_Landing</members>
+        <members>TEST_DEVOPS_Landing</members>
         <name>ApexClass</name>
     </types>
     <types>
