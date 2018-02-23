@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-<!--<cxResults>
+<cxResults>
     <app>DEVOPS</app>
     <cxQueryName>The DML statement "update", can not be inside a for loop.</cxQueryName>
     <file>Codecheck/src/classes/DEVOPS_Landing.cls</file>
@@ -9,5 +9,5 @@
     <approvedBy>Abhinav Gadepalli</approvedBy>
     <justification>Cannot bulkify but will only be called for single record from webservices</justification>
     <expiresYyyyMmDd>20180606</expiresYyyyMmDd>
-</cxResults>-->
+</cxResults>
 </Package>
