@@ -1,0 +1,56 @@
+<apex:page id="A360_DocumentReview" standardController="DEVOPS_Setup_Request__c" sidebar="false" title="DevOps Setup Request">
+    <apex:stylesheet value="{!URLFOR($Resource.DEVOPS_TwitterBootstrapResource, '3.3.7/css/bootstrap-salesforce.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.DEVOPS_FontAwesomeResource, '4.5.0/css/font-awesome.min.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.DEVOPS_jQueryResource, 'jquery-2.2.2.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.DEVOPS_TwitterBootstrapResource, '3.3.7/js/bootstrap.min.js')}" />
+    <apex:includeScript value="/support/console/42.0/integration.js"/>
+    <div class="bootstrap" style="margin-top: 30px;">
+        <div class="container-fluid">
+            <apex:outputpanel >
+                <div class="row">
+                <div class="col-md-5">
+                        <apex:form >
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    DevOps Setup Request Information
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                        <label for="therapeuticArea">{!$ObjectType.DEVOPS_Setup_Request__c.fields.Project_Name__c.label}</label>
+                                        <apex:inputField id="therapeuticArea" value="{!DEVOPS_Setup_Request__c.Project_Name__c}" styleClass="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="drug">{!$ObjectType.DEVOPS_Setup_Request__c.fields.Technology__c.label}</label>
+                                        <apex:inputField id="drug" value="{!DEVOPS_Setup_Request__c.Technology__c}" styleClass="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="priority">{!$ObjectType.DEVOPS_Setup_Request__c.fields.Version_Control_System_Identified__c.label}</label>
+                                        <apex:inputField id="vcs" value="{!DEVOPS_Setup_Request__c.Version_Control_System_Identified__c}" styleClass="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="priority">{!$ObjectType.DEVOPS_Setup_Request__c.fields.Key_Point_of_Contact__c.label}</label>
+                                        <apex:inputField id="kpc" value="{!DEVOPS_Setup_Request__c.Key_Point_of_Contact__c}" styleClass="form-control" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="priority">{!$ObjectType.DEVOPS_Setup_Request__c.fields.Email_Address__c.label}</label>
+                                        <apex:inputField id="ea" value="{!DEVOPS_Setup_Request__c.Email_Address__c}" styleClass="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <apex:outputPanel >
+                            <button class="btn btn-success" >
+                                <span class="fa fa-check-circle"></span>
+                                <span class="select-text">Submit Request</span>
+                            </button>
+                        </apex:outputPanel>
+                        </apex:form>
+                        </div>
+                        <div class="col-md-7">
+                            <iframe src="{!URLFOR($Resource.DEVOPS_StrategyPDF)}" width="100%" height="500px" />
+                        </div>
+                    </div>
+            </apex:outputpanel>
+            
+        </div>
+    </div>
+</apex:page>
