@@ -21,7 +21,7 @@
     <types>
         <members>DEVOPS_FontAwesomeResource</members>
         <members>DEVOPS_jQueryResource</members>
-        <members>DEVOPS_StrategyPDF/members>
+        <members>DEVOPS_StrategyPDF</members>
         <members>DEVOPS_TwitterBootstrapResource</members>
         <name>StaticResource</name>
     </types>
