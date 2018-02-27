@@ -14,7 +14,7 @@
         <name>PermissionSet</name>
     </types>
     <types>
-        <members>DOPS_Landing</members>
+        <members>DEVOPS_Landing</members>
         <name>ApexPage</name>
     </types>
     <types>
