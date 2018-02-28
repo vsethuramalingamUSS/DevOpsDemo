@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]">
+  <test name="Automation(failed)">
+    <classes>
+      <class name="lilly.regression.Regression_Suite">
+        <methods>
+          <include name="AEPC_Creation"/>
+        </methods>
+      </class> <!-- lilly.regression.Regression_Suite -->
+    </classes>
+  </test> <!-- Automation(failed) -->
+</suite> <!-- Failed suite [Regression] -->
