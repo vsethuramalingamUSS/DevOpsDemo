@@ -29,6 +29,12 @@ WebDriver driver = DriverFactory.getdriver() ;
 @Test
 public void AEPC_Creation() throws Exception {
 	
+	String w = System.getenv("TEST_PWD");
+	System.out.println("w:::"+w);
+	if(w!=null && w.equals("12345")) {
+		System.out.println("Matched!!!!!!!!");
+	}
+	
 	//Page Instance
 	Utility_Functions util = new Utility_Functions(driver);
 	Login login = new Login(driver);
