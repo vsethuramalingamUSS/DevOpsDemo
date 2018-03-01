@@ -16,8 +16,10 @@ public class Login {
 		public void userLogin() throws InterruptedException{
 			
 			Thread.sleep(5000);
-			driver.findElement(By.id("username")).sendKeys("devopsdev@demo.com");
-			driver.findElement(By.id("password")).sendKeys("Deloitte#123");
+			String username = System.getenv("SFDC_UserName");
+			String password = System.getenv("SFDC_Password");
+			driver.findElement(By.id("username")).sendKeys(username);
+			driver.findElement(By.id("password")).sendKeys(password);
 			driver.findElement(By.id("Login")).click();
 			Thread.sleep(5000);
 			System.out.println("Login successful");

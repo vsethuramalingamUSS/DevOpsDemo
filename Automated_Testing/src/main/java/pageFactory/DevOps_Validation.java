@@ -30,6 +30,10 @@ public class DevOps_Validation {
 	//driver.findElement(By.id("A360_DocumentReview:j_id8:ea")).sendKeys("contact@test.com");
 	driver.findElement(By.xpath("//button")).click();
 	util.getscreenshot("Setup Request");
-	
+	String error = driver.findElement(By.xpath("//div[@class='errorMsg']")).getText();
+	if(error.equalsIgnoreCase("Error: You must enter a value"))
+		System.out.println("Email is mandatory");
+	else
+		System.out.println("Error is not displayed");
 	}
 }
