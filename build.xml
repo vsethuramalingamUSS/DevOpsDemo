@@ -27,7 +27,8 @@
     <target name="deployWithTestClasses">
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
       <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" testLevel="RunSpecifiedTests" rollbackOnError="true">
-      	 <runTest>SampleDeployClass</runTest> 
+      	 <runTest>TEST_PEP_Patient_Create_Controller</runTest>
+         <runTest>TEST_PEP_Trigger_Handler_Patient</runTest> 
       </sf:deploy>
     </target>
 </project>
