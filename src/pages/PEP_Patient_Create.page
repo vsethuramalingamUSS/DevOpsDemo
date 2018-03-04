@@ -1,0 +1,45 @@
+<apex:page standardController="PEP_Patient__c" extensions="PEP_Patient_Create_Controller" sidebar="false">
+    <apex:form >
+    <apex:sectionHeader title="Patient Enrollment Wizard" subtitle="New Patient"/>
+    <apex:pageBlock >
+        <apex:pageBlockButtons >
+            <apex:commandButton action="{!saveDetails}" value="Enroll Patient" />
+            <apex:commandButton action="{!saveDetails}" value="Cancel" />
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="Patient Details" columns="2">
+            <apex:inputField value="{!patientRecord.First_Name__c}"/>
+            <apex:inputField value="{!patientRecord.Middle_Name__c}"/>
+            <apex:inputField value="{!patientRecord.Last_Name__c}"/>
+            <apex:inputField value="{!patientRecord.Gender__c}"/>
+            <apex:inputField value="{!patientRecord.Date_of_Birth__c}"/>
+            <apex:inputField value="{!patientRecord.Email_Address__c}"/>
+            <apex:inputField value="{!patientRecord.Telephone_1__c}"/>
+            <apex:inputField value="{!patientRecord.Telephone_2__c}"/>
+            <apex:inputField value="{!patientRecord.Preferred_Time_to_Call_old__c}"/>
+            <apex:inputField value="{!patientRecord.Is_Patient_Uninsured__c}"/>
+            <apex:inputField value="{!patientRecord.Preferred_Language__c}"/>
+            <apex:inputField value="{!patientRecord.Preferred_Language_if_Other__c}"/>
+            <apex:inputField value="{!patientRecord.Conditions__c}"/>
+            <apex:inputField value="{!patientRecord.Condition_Details__c}"/>
+            <apex:inputField value="{!patientRecord.Caregiver_First_Name__c}"/>
+            <apex:inputField value="{!patientRecord.Caregiver_Last_Name__c}"/>
+            <apex:inputField value="{!patientRecord.Caregiver_Relationship__c}"/>
+            <apex:inputField value="{!patientRecord.Caregiver_Telephone_1__c}"/>
+            <apex:inputField value="{!patientRecord.Caregiver_Consent__c}"/>
+            
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Address Details" columns="2">
+            <apex:inputField value="{!patientAddressRecord.Type__c}"/>
+            <apex:inputField value="{!patientAddressRecord.Status__c}"/>
+            <apex:inputField value="{!patientAddressRecord.Street_1__c}"/>
+            <apex:inputField value="{!patientAddressRecord.Street_2__c}"/>
+            <apex:inputField value="{!patientAddressRecord.Street_3__c}"/>
+            <apex:inputField value="{!patientAddressRecord.City__c}"/>
+            <apex:inputField value="{!patientAddressRecord.Country__c}"/>
+            <apex:inputField value="{!patientAddressRecord.State__c}"/>
+            <apex:inputField value="{!patientAddressRecord.Postal_Code__c}"/>
+            
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>
