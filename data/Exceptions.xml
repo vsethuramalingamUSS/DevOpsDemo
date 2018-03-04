@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-<generics>
-    <app>DEVOPS</app>
-    <type>CustomObject</type>
-	<item>GLBL_Error_Logs__c</item>
-    <approvedBy>Abhinav Gadepalli</approvedBy>
-    <justification>Global configuration for capturing org wide exceptions</justification>
-    <expiresYyyyMmDd>20181108</expiresYyyyMmDd>
-</generics>
-<generics>
-    <app>DEVOPS</app>
-    <type>Permission</type>
-    <item>DEVOPS_Admin.permissionset___EditReadonlyFields</item>
+<cxResults>
+    <app>PEP</app>
+    <cxQueryName>The DML statement “insert”, can not be inside a for loop.</cxQueryName>
+    <file>Codecheck/src/classes/PEP_Trigger_Handler_Patient.cls</file>
+    <line>17</line>
+    <column>123</column>
     <approvedBy>Abhinav Gadepalli</approvedBy>
-    <justification>Only admins can edit fields that are in read-only mode</justification>
-    <expiresYyyyMmDd>20181108</expiresYyyyMmDd>
-  </generics>
+    <justification>Approved for demo</justification>
+    <expiresYyyyMmDd>20180606</expiresYyyyMmDd>
+</cxResults>
 </Package>
