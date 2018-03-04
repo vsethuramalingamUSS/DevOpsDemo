@@ -19,11 +19,15 @@
     </types>
     <types>
         <members>PEP_Patient__c-Patient Layout</members>
-        <name>PageLayout</name>
+        <name>Layout</name>
     </types>
     <types>
         <members>PEP_Trigger_Patient</members>
         <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>PEP_Patient_Create</members>
+        <name>ApexPage</name>
     </types>
     <types>
         <members>PEP_Patient_Platform</members>
