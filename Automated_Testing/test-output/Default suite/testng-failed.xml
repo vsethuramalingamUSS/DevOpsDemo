@@ -5,7 +5,7 @@
     <classes>
       <class name="com.devOps_Test.DevOps_Selenium">
         <methods>
-          <include name="Test_DevOps"/>
+          <include name="Test_DevOps_OpenActivities"/>
         </methods>
       </class> <!-- com.devOps_Test.DevOps_Selenium -->
     </classes>

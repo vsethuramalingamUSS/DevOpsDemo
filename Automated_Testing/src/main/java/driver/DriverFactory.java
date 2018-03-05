@@ -12,7 +12,8 @@ public class DriverFactory {
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-	String url = System.getenv("SFDC_URL");
+	/*String url = System.getenv("SFDC_URL");*/
+	String url = "https://login.salesforce.com/";
 	System.out.println("URL is "+url);
 	
 	driver.get(url);
