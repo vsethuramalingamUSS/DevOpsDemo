@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>GLBL_Error_Logs__c</members>
+        <members>PEP_Patient__c</members>
+        <members>PEP_Patient_Address__c</members>
         <name>CustomObject</name>
     </types>
     <types>
-        <members>DEVOPS_Landing</members>
+        <members>PEP_Patient_Create_Controller</members>
+        <members>PEP_Trigger_Handler_Patient</members>
+        <members>TEST_PEP_Patient_Create_Controller</members>
+        <members>TEST_PEP_Trigger_Handler_Patient</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>DEVOPS_Admin</members>
-        <name>PermissionSet</name>
+        <members>PEP_Patient_Enrollment_Form</members>
+        <members>PEP_Patient__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>PEP_Patient__c-Patient Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>PEP_Trigger_Patient</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>PEP_Patient_Create</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>PEP_Patient_Platform</members>
+        <name>CustomApplication</name>
     </types>
     <version>38.0</version>
 </Package>
