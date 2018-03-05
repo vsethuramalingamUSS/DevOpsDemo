@@ -17,7 +17,7 @@ import utility_functions.Utility_Functions;
 public class PEP_Selenium {
 
 @Test
-public void Test_DevOps_PatientAddress() throws Exception {
+public void Test_PEP_PatientAddress() throws Exception {
 	boolean b = false;
 	WebDriver driver = DriverFactory.getdriver();
 	try {
@@ -64,7 +64,7 @@ public void Test_DevOps_PatientAddress() throws Exception {
 }
 
 @Test
-public void Test_DevOps_OpenActivities() throws Exception {
+public void Test_PEP_OpenActivities() throws Exception {
 	boolean b = false;
 	WebDriver driver = DriverFactory.getdriver();
 	try {
