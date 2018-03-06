@@ -30,7 +30,7 @@
         <name>ApexPage</name>
     </types>
     <types>
-        <members>PEP_Patient_Platform</members>
+        <members>Patient_Platform</members>
         <name>CustomApplication</name>
     </types>
     <version>38.0</version>
