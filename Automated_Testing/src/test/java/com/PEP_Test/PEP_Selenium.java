@@ -72,7 +72,7 @@ public void Test_PEP_OpenActivities() throws Exception {
 	Login login = new Login(driver);
 	login.userLogin();
 	driver.findElement(By.xpath("//a[@title='Patient Enrollment Form Tab']")).click();
-	Thread.sleep(5000);
+	Thread.sleep(10000);
 	
 	Select s=new Select(driver.findElement(By.id("pageId:formId:pb:pbs:gen")));
 	s.selectByVisibleText("Male");
@@ -98,7 +98,7 @@ public void Test_PEP_OpenActivities() throws Exception {
 	s.selectByVisibleText("RI");
 	
 	driver.findElement(By.id("pageId:formId:pb:j_id1:bottom:enrol")).click();
-	Thread.sleep(5000);
+	Thread.sleep(10000);
 	b = driver.findElement(By.xpath("//a[text()='Follow-up with patient for services opt-in']")).isDisplayed();
 	System.out.println("Open Activities is displayed");
 	driver.quit();
