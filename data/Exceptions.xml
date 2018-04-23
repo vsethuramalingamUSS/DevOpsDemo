@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 <cxResults>
-    <app>PEP1</app>
+    <app>PEP</app>
     <cxQueryName>The DML statement "insert", can not be inside a for loop.</cxQueryName>
     <file>Codecheck/src/classes/PEP_Trigger_Handler_Patient.cls</file>
     <line>19</line>
