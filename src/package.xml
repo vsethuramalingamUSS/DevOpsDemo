@@ -26,12 +26,8 @@
         <name>ApexTrigger</name>
     </types>
     <types>
-        <members>PEP_Patient_Create</members>
+        <members>Patient_Create</members>
         <name>ApexPage</name>
-    </types>
-    <types>
-        <members>PEP_Patient_Platform</members>
-        <name>CustomApplication</name>
     </types>
     <version>38.0</version>
 </Package>
