@@ -58,7 +58,7 @@ public void Test_PEP_PatientAddress() throws Exception {
 	}
 	catch(Exception e){
 		System.out.println("Patient Address is not displayed");
-		Assert.assertEquals(b,"True");
+		Assert.assertEquals(b,"false");
 		driver.quit();
 		}
 }
@@ -106,7 +106,7 @@ public void Test_PEP_OpenActivities() throws Exception {
 	catch(Exception e){
 		System.out.println("Open Activities is not displayed");
 		driver.quit();
-		Assert.assertEquals(b,"True");
+		Assert.assertEquals(b,"false");
 		}
 	}
 }
