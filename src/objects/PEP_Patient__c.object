@@ -126,7 +126,7 @@
     <fields>
         <fullName>Caregiver_Telephone_1__c</fullName>
         <externalId>false</externalId>
-        <label>Caregiver Telephone 1</label>
+        <label>Caregiver Telephone</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
