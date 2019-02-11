@@ -6,7 +6,7 @@ public with sharing class DEVOPS_Landing{
         List<User> userList = Database.query(soqlQuery);
         ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.INFO,'Number of Active Users in this org are: '+ userList.size()));
         for(User u : userList){
-            update u;
+           // update u;
         }
     }
 }
