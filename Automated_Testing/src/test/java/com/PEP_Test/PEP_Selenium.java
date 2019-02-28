@@ -25,6 +25,7 @@ public void Test_PEP_PatientAddress() throws Exception {
 	Login login = new Login(driver);
 	login.userLogin();
 	driver.findElement(By.xpath("//a[@title='Patient Enrollment Form Tab']")).click();
+	system.out.println("Entered to patient enrollement form");	
 	Thread.sleep(5000);
 	
 	Select s=new Select(driver.findElement(By.id("pageId:formId:pb:pbs:gen")));
