@@ -57,6 +57,7 @@ public void Test_PEP_PatientAddress() throws Exception {
 	driver.quit();
 	}
 	catch(Exception e){
+		e.printStackTrace();
 		System.out.println("Patient Address is not displayed");
 		Assert.assertEquals(b,"true");
 		driver.quit();
