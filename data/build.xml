@@ -16,17 +16,14 @@
             <pathelement location="../ant-salesforce.jar" />        	
         </classpath>
     </taskdef>
-	
-    <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
-    <target name="deployWithoutTestClasses">
-      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" allowMissingFiles="true"/>
-    </target>
-
 
     <!-- Shows deploying code & running tests for code in directory -->
-    <target name="deployWithTestClasses">
+    <target name="deploy">
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
-      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true" allowMissingFiles="true">
-      </sf:deploy>
+      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true"  allowMissingFiles="true" testLevel="NoTestRun">
+		
+		<!--runTests-->
+		
+	  </sf:deploy>
     </target>
 </project>
