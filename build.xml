@@ -1,41 +1,33 @@
-<project default="runtests">
-	<property environment="env"/>
-	<property name="provar.home" value="C:/Program Files/Provar_1.9.7.04/"/>
-	<property name="testproject.home" value=".."/>
-	<property name="testproject.results" value="../ANT/Results"/>
-	<property name="secrets.password" value="${env.ProvarSecretsPassword}"/>
-	<property name="testenvironment.secretspassword" value="${env.ProvarSecretsPassword_EnvName}"/>
-	
-	
-	<taskdef name="Provar-Compile" classname="com.provar.testrunner.ant.CompileTask" classpath="${provar.home}/ant/ant-provar.jar"/>
-	<taskdef name="Run-Test-Case" classname="com.provar.testrunner.ant.RunnerTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar"/>
-	<taskdef name="Test-Cycle-Report" classname="com.provar.testrunner.ant.TestCycleReportTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar"/>
-	
-	<target name="runtests">
-	
-		<Provar-Compile provarHome="${provar.home}" projectPath="${testproject.home}"/>
-	
-		<Run-Test-Case provarHome="${provar.home}" 
-				projectPath="${testproject.home}" 
-				resultsPath="${testproject.results}" 
-				resultsPathDisposition="Increment" 
-				testEnvironment="" 
-				webBrowser="Chrome" 
-				webBrowserConfiguration="Full Screen" 
-				excludeCallableTestCases="true" 
-				salesforceMetadataCache="Reuse" 
-				projectCachePath="../../.provarCaches"
-				testOutputlevel="WARNING" 
-				pluginOutputlevel="WARNING"
-				stopTestRunOnError="false"
-				secretsPassword="${secrets.password}"
-				testEnvironmentSecretsPassword="${testenvironment.secretspassword}"
-				invokeTestRunMonitor="true"
-				>
-		
-			<fileset id="testcases" dir="../tests/Trial Tests/Lessons"></fileset><fileset id="testcases" dir="../tests/Trial Tests/Solved Exercises"></fileset>
+<project name="Ant jobs" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
 
-		</Run-Test-Case>
+    <property file="build.properties"/>
+    <property environment="env"/>
 
-	</target>
+    <!-- Setting default value for username, password and session id properties to empty string 
+         so unset values are treated as empty. Without this, ant expressions such as ${sf.username}
+         will be treated literally.
+    -->
+    <condition property="sf.username" value=""> <not> <isset property="sf.username"/> </not> </condition>
+    <condition property="sf.password" value=""> <not> <isset property="sf.password"/> </not> </condition>
+    <condition property="sf.sessionId" value=""> <not> <isset property="sf.sessionId"/> </not> </condition>
+    <condition property="sf.serverurl" value=""> <not> <isset property="sf.serverurl"/> </not> </condition>
+    <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
+        <classpath>
+            <pathelement location="../ant-salesforce.jar" />        	
+        </classpath>
+    </taskdef>
+	
+    <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
+    <target name="deployWithoutTestClasses">
+      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" rollbackOnError="true"/>
+    </target>
+
+
+    <!-- Shows deploying code & running tests for code in directory -->
+    <target name="deployWithTestClasses">
+      <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
+      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" testLevel="RunSpecifiedTests" rollbackOnError="true">
+      	 <runTest>SampleDeployClass</runTest> 
+      </sf:deploy>
+    </target>
 </project>
