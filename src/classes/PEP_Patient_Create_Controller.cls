@@ -14,7 +14,7 @@ public with sharing class PEP_Patient_Create_Controller{
     public PEP_Patient__c patientRecord {get; set;}
     public PEP_Patient_Address__c patientAddressRecord {get; set;}
     
-    // test code 1
+    // test code 2
     public PEP_Patient_Create_Controller(ApexPages.StandardController controller) {
         patientRecord = new PEP_Patient__c();
         patientAddressRecord = new PEP_Patient_Address__c();
